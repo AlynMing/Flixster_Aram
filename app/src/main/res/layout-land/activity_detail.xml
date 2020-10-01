@@ -37,14 +37,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         tools:text="27 years after overcoming the malevolent supernatural entity..."
-        android:paddingBottom="10dp"
-        />
 
-    <TableRow
-        android:id="@+id/hr"
-        android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:background="#444"> </TableRow>
+        />
 
     <TextView
         android:id="@+id/Popularity"

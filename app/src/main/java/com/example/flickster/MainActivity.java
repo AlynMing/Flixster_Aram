@@ -36,22 +36,6 @@ public class MainActivity extends AppCompatActivity {
     List<Movie> movies;
 
 
-//    public void click(View view) {
-//        //View tvOverview;
-//
-//        TextView tvTitle = findViewById(R.id.tvTitle);
-//        //tvOverview =  findViewById(R.id.tvOverview);
-//
-//        Intent intent = new Intent(this, DetailActivity.class);
-//
-//        //Pair<View, String> p1 = Pair.create((View)(tvTitle), "titletran");
-//        //Pair<View, String> p2 = Pair.create(tvOverview, "descriptiontran");
-//        ActivityOptionsCompat options = ActivityOptionsCompat.
-//                makeSceneTransitionAnimation(this, tvTitle, "titletran");
-//        startActivity(intent, options.toBundle());
-//
-//    }
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

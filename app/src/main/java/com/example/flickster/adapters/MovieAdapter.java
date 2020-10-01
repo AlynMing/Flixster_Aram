@@ -127,11 +127,9 @@ public class MovieAdapter extends RecyclerView.Adapter<MovieAdapter.ViewHolders>
             }
 
 
-            Glide.with(context).load(imageUrl).into(ivPoster);
+            // include rounded corner transformation
+            Glide.with(context).load(imageUrl).fitCenter().transform(new RoundedCorners(20)).into(ivPoster);
 
-            // possibly mess around with scaletype
-            // TESTING GIT, again
-            // .transform(new RoundedCorners(2))
 
             // 1. Register click listener on the full container / anywhere in each row
             container.setOnClickListener(new View.OnClickListener() {

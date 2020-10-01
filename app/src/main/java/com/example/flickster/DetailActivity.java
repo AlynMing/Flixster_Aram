@@ -20,6 +20,7 @@ import com.google.android.youtube.player.YouTubeThumbnailView;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.parceler.Parcels;
+import org.w3c.dom.Text;
 
 import okhttp3.Headers;
 
@@ -32,7 +33,7 @@ public class DetailActivity extends YouTubeBaseActivity {
     TextView tvOverview;
     RatingBar ratingBar;
     YouTubePlayerView youTubePlayerView;
-    EditText Popularity;
+    TextView Popularity;
     TextView ReleaseDate;
 
 

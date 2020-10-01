@@ -129,7 +129,7 @@ public class MovieAdapter extends RecyclerView.Adapter<MovieAdapter.ViewHolders>
 
             Glide.with(context).load(imageUrl).into(ivPoster);
 
-
+            // possibly mess around with scaletype
             // .transform(new RoundedCorners(2))
 
             // 1. Register click listener on the full container / anywhere in each row

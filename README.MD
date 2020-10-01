@@ -40,3 +40,4 @@ Flix is an app that allows users to browse movies from the [The Movie Database A
 
 - [Android Async HTTP](https://github.com/codepath/CPAsyncHttpClient) - Simple asynchronous HTTP requests with JSON parsing
 - [Glide](https://github.com/bumptech/glide) - Image loading and caching library for Androids
+- [YoutubeAndroidPlayerAPI] (https://developers.google.com/youtube/android/player/) - Fetching youtube videos for movie trailers and playing it in Android application

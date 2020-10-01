@@ -34,6 +34,7 @@ Flix is an app that allows users to browse movies from the [The Movie Database A
 1. Was difficult to navigate around depreceated methods and outdated notes regarding Roundcorners and shared element transitions
 2. I had trouble recalling Git terminal methods for pushing a new repo, pulling readme file, and pushing the gif to the repo.
 3. Understanding the Movieadapter and it's call mappings was difficult.
+4. Unable to setup navigation/scrolling on the landscape view. Would love to hear how to get this done so I can display popularity_score and release_date
 
 ### Open-source libraries used
 

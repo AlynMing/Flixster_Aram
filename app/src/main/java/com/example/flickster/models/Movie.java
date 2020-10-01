@@ -6,16 +6,26 @@ package com.example.flickster.models;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
+import org.parceler.Parcel;
 
 import java.util.ArrayList;
 import java.util.List;
 
+@Parcel
 public class Movie {
 
+    int movieID;
     String backdropPath;
     String posterPath;
     String title;
     String overview;
+    double rating;
+    String release_date;
+    double popularity;
+
+    // empty constructor needed by Parceler Library
+    public Movie() {}
+
 
     // A constructor that takes in a JSON object, and it will construct a Movie Object. tAKE IN JSON object and read out the fields specified.
     public Movie(JSONObject jsonObject) throws JSONException { // if any getString fails, the constructor throws JSONException. this is method signature not try/catch.
@@ -23,6 +33,11 @@ public class Movie {
         posterPath = jsonObject.getString("poster_path");
         title = jsonObject.getString("title");
         overview = jsonObject.getString("overview");
+        rating = jsonObject.getDouble("vote_average");
+        movieID = jsonObject.getInt("id");
+        release_date = jsonObject.getString("release_date");
+        popularity = jsonObject.getDouble("popularity");
+
     }
 
     // Static method to return a list of movies. Input is Json Array. Iterates through json array and constructs a movie for each element
@@ -54,4 +69,22 @@ public class Movie {
     public String getOverview() {
         return overview;
     }
+
+    public double getRating() {
+        return rating;
+    }
+
+    public int getMovieID() {
+        return movieID;
+    }
+
+    public String getRelease_date() {
+        return release_date;
+    }
+
+    public double getPopularity() {
+        return popularity;
+    }
+
+
 }

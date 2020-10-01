@@ -1,11 +1,17 @@
 package com.example.flickster;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.app.ActivityOptionsCompat;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
+import android.util.Pair;
+import android.view.View;
+import android.widget.ImageView;
+import android.widget.TextView;
 
 import com.codepath.asynchttpclient.AsyncHttpClient;
 import com.codepath.asynchttpclient.callback.JsonHttpResponseHandler;
@@ -15,6 +21,7 @@ import com.example.flickster.models.Movie;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
+import org.w3c.dom.Text;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -27,6 +34,23 @@ public class MainActivity extends AppCompatActivity {
     public static final String TAG = "MainActivity"; // create tag so we can Easily log data
 
     List<Movie> movies;
+
+
+//    public void click(View view) {
+//        //View tvOverview;
+//
+//        TextView tvTitle = findViewById(R.id.tvTitle);
+//        //tvOverview =  findViewById(R.id.tvOverview);
+//
+//        Intent intent = new Intent(this, DetailActivity.class);
+//
+//        //Pair<View, String> p1 = Pair.create((View)(tvTitle), "titletran");
+//        //Pair<View, String> p2 = Pair.create(tvOverview, "descriptiontran");
+//        ActivityOptionsCompat options = ActivityOptionsCompat.
+//                makeSceneTransitionAnimation(this, tvTitle, "titletran");
+//        startActivity(intent, options.toBundle());
+//
+//    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -44,6 +68,8 @@ public class MainActivity extends AppCompatActivity {
 
         // Set a Layout Manager on the recycler view
         rvMovies.setLayoutManager(new LinearLayoutManager(this));
+
+
 
 
         AsyncHttpClient client = new AsyncHttpClient(); // initiate instance of AsyncHttpClient
